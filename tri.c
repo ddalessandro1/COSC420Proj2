@@ -8,9 +8,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <math.h>
 #include "randpoint.h"
 #include "side.h"
-
+#include "Area.h"
+#include "height.h"
 
 /*main function
   creates the unit triangle
@@ -21,6 +23,7 @@ int main(){
   float I[6]; //array to hold the inscribed triangle vertices
   float x,y; //x and y values for the vertex coordinate
   float i; //index variable
+  float area;//area of the triangle
 
   //Vertex A (Ax,Ay)
   V[0]=0;
@@ -51,6 +54,10 @@ int main(){
   printf("RT = %f\n",side(I[0],I[1],I[2],I[3]));
   printf("TS = %f\n",side(I[2],I[3],I[4],I[5]));
   printf("RS = %f\n",side(I[0],I[1],I[4],I[5]));
+  //Are(rt, rs, ts)
+  area=Area(side(I[0],I[1],I[2],I[3]),side(I[0],I[1],I[4],I[5]),side(I[2],I[3],I[4],I[5]));
+  
+  printf("Area is %f\n",area);
   
   return 0;
 }
