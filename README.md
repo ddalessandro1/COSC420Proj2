@@ -8,3 +8,6 @@
 # gcc -c side.c randpoint.c <otherfiles.c>... -lm 
 # gcc -o tri tri.o randpoint.o side.o <otherfiles.o>... -lm
 # ./tri
+
+# As of 11/16/18
+# Just use the makefile...
