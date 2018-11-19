@@ -1,10 +1,7 @@
-all:project2
+all:proj2
 
-project2: tri.o lib.a
-	gcc -o tri tri.o lib.a -lm
-#project file
-tri.o: tri.c
-	gcc -lm -c tri.c
+proj2: tri.c lib.a
+	mpicc tri.c lib.a -o proj2 -lm
 
 #for the static library
 side.o: side.c side.h
