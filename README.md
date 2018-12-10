@@ -1,13 +1,8 @@
 # COSC420Proj2
+# This project is the serial version of a non-MCS where 
+# the areas of many randomly generated inscribed triangles 
+# are determined using geometric, trigonometric and algebraic relationships.
+# This is also meant to exemplify the usefullness of a make file when
+# using a user-generated static library. 
 
-# Use the file template.c to start all new files
-
-# As of 11/15/18
-# Compile with:
-# gcc -c tri.c 
-# gcc -c side.c randpoint.c <otherfiles.c>... -lm 
-# gcc -o tri tri.o randpoint.o side.o <otherfiles.o>... -lm
-# ./tri
-
-# As of 11/16/18
-# Just use the makefile...
+# Just use the makefile
